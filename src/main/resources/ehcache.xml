@@ -1,0 +1,15 @@
+<ehcache>
+
+    <diskStore path="java.io.tmpdir"/>
+
+    <!-- objects are evicted from the cache every 60 seconds -->
+    <defaultCache
+            maxElementsInMemory="10000"
+            eternal="false"
+            timeToIdleSeconds="120"
+            timeToLiveSeconds="120"
+            overflowToDisk="true"
+            diskPersistent="false"
+            diskExpiryThreadIntervalSeconds="120"
+            memoryStoreEvictionPolicy="LRU"/>
+</ehcache>
