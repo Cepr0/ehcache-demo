@@ -12,4 +12,11 @@
             diskPersistent="false"
             diskExpiryThreadIntervalSeconds="120"
             memoryStoreEvictionPolicy="LRU"/>
+
+    <cache name="io.github.cepr0.demo.Parent"
+            maxElementsInMemory="10000"/>
+
+    <cache name="io.github.cepr0.demo.Parent.roles"
+           maxElementsInMemory="10000"/>
+
 </ehcache>
